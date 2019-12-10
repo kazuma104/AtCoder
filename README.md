@@ -1,20 +1,14 @@
 # AtCoder
-<<<<<<< HEAD
 
-AtCoderで作成したプログラムを入れたい．
-
-## ABC
-
-AtCoder Beginner Contest
-=======
 AtCoder（アットコーダー）とは、「競技プログラミング」と呼ばれるコンピュータプログラムのコンテストを行うサービス、および高橋直大が代表を務めるその運営会社を指す。[by.wiki](https://ja.wikipedia.org/wiki/AtCoder)
 
 ## AtCoder Beginner Contest (ABC)
+
 競技プログラミング初心者/初級者向けのコンテスト．  
 自分はここのC~Dあたりが難しいので頑張ってもっと解けるようにする．
 
 ### DP(動的計画法)
+
 この問題はAtCoderではなく[ここ](https://qiita.com/drken/items/a5e6fe22863b7992efdb)を参考させていただいた．
 あと[ここ](http://wakabame.hatenablog.com/entry/2017/09/10/211428)も．  
 [Educational DP Contest](https://atcoder.jp/contests/dp)
->>>>>>> 7d7945c7d7c7bb40a75ca3d67f416f040f11450e
