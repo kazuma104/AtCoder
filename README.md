@@ -14,12 +14,13 @@ AtCoder（アットコーダー）とは、「**競技プログラミング**」
 
 ### AtCoder Regular Contest (ARC)
 競技プログラミング中級者/上級者向けのコンテスト．  
-必ずしもARCと書かれているものだけが，Regularではない．
+必ずしもARCと書かれているものだけが，Regularではない．  
 やったことない．  
 **Rated対象:～2799**
 
 ### AtCoder Grand Contest (AGC)
-やばいやつ．やったことない．  
+やばいやつ．  
+やったことない．  
 **Rated対象:ALL**
 
 ### DP(動的計画法)
@@ -32,4 +33,13 @@ DP問題はAtCoderから選んでいないものがある．[ここ](https://qii
 
 ### bit全探索
 
-bit全探索をするためには，for文で各ビットごとに2進数のn乗でループを回す．
+bit全探索をするためには，for文で各ビットごとに2進数のn乗でループを回す．  
+
+【Python】
+```py
+# bit全探索
+for i in range(2 ** n):
+    for j in range(n):
+        if((i >> j) & 1):
+
+```
