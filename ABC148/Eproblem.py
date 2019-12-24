@@ -1,30 +1,18 @@
-# N = int(input())
-
-# def func(n):
-#     if n < 2:
-#         return 1
-#     else:
-#         return n*func(n-2)
-
-# print(N)
-# ans = func(N)
-# print(ans)
-# count = 0
-# while True:
-#     if ans%10 == 0:
-#         ans /= 10
-#         count += 1
-#     else: 
-#         break
-# print(count)
+#10の倍数は必ず5を素因数にもつ．
+#1000なら少なくとも100個の5を素因数にもつ数がある．
+#次に50の倍数は必ず2つの5を素因数にもつ
+#なので10の倍数の時に判定できなかったもう一つの5を50で割ることで見つける．
+#以降繰り返すと求まる．終了条件は割る数が元の数より大きくなったとき．
 
 N = int(input())
 count = 0
-for i in range(N,0,-2):
-    for j in range(1, len(str(i))):
-        if i % 10**j == 0:
-            count += 1
-        else:
-            break
+mul = 10
 
-print(count)
+if (N % 2) == 0:
+    while True:
+        count += N // mul
+        mul *= 5
+        if mul > N: break
+    print(count)
+else:
+    print(0)
