@@ -33,7 +33,7 @@ DP問題はAtCoderから選んでいないものがある．[ここ](https://qii
 * [DP(動的計画法)](https://qiita.com/drken/items/a5e6fe22863b7992efdb)  
 * [EDPC](https://atcoder.jp/contests/dp)
 
-## bit全探索
+## bit全探索(作成途中)
 
 bit全探索をするためには，for文で各ビットごとに2進数のn乗でループを回す．  
 
@@ -45,3 +45,6 @@ for i in range(2 ** n):
     for j in range(n):
         if((i >> j) & 1):
 ```
+
+## VSCodeのショトカトキ
+[Ctrl]+[K]+[V]
