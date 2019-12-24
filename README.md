@@ -10,6 +10,7 @@ AtCoder（アットコーダー）とは、「**競技プログラミング**」
 **Rated対象:～1999**
 
 * [ABC147](https://atcoder.jp/contests/abc147)
+* [ABC148](https://atcoder.jp/contests/abc148)
 * [三井住友信託銀行プログラミングコンテスト2019](https://atcoder.jp/contests/sumitrust2019)
 
 ## AtCoder Regular Contest (ARC)
@@ -39,12 +40,20 @@ bit全探索をするためには，for文で各ビットごとに2進数のn乗
 
 【Python】
 
-```py
+```python
 # bit全探索
 for i in range(2 ** n):
     for j in range(n):
         if((i >> j) & 1):
 ```
 
-## VSCodeのショトカトキ
+### 便利機能
+
+ブランチ作成とチェックアウトを同時に
+
+```bash
+git checkout -b【ブランチ名】
+```
+
+VSCode内でmarkdownのプレビューを見る．  
 [Ctrl]+[K]+[V]
