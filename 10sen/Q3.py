@@ -1,7 +1,16 @@
 N = int(input())
-A = map(int, input().split())
+A = list(map(int, input().split()))
 
-maxcount = 0
+div = float("inf")
 for i in range(N):
+    count = 0
     while True:
-        A[i] /= 2
+        if A[i] % 2 == 0:
+            A[i] /= 2
+            count += 1
+        else: break
+    if div > count:
+        div = count
+print(div)
+
+
