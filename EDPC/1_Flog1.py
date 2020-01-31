@@ -12,6 +12,6 @@ for i in range(1,N):
     dp[i] = min(dp[i], dp[i-1] + abs(h[i] - h[i-1]))
     if(i>1): #2つ目の足場には二個前の足場がないので．
         dp[i] = min(dp[i], dp[i-2] + abs(h[i] - h[i-2]))
-print()
+ 
 #4:出力
 print(dp[N-1])
