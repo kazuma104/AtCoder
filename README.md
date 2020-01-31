@@ -29,7 +29,7 @@
 ## DP(動的計画法)
 
 DP問題はAtCoderの問題から選んでいないものがあるが一応載せておく．  
-下のDP(動的計画法)はとてもためになる（やばい）．  
+下のDP(動的計画法)はとてもためになる（やばい）．その派生サイトも  
 
 * [DP(動的計画法)](https://qiita.com/drken/items/a5e6fe22863b7992efdb)  
 * [EDPC](https://atcoder.jp/contests/dp)
