@@ -1,9 +1,17 @@
+#1:初期化
 N = int(input())
 h = list(map(int, input().split()))
+inf = float("inf")
+dp = [inf]*(N)
 
-dp = [[0]*(3) for i in range(N+1)]
+#2:初期値
+dp[0] = 0
 
-print(*dp, sep="\n") #dp部確認用
-for i in range(N):
-    for j in range(3):
-        print("a")
+#3:dp実行部
+for i in range(1,N):
+    dp[i] = min(dp[i], dp[i-1] + abs(h[i] - h[i-1]))
+    if(i>1): #2つ目の足場には二個前の足場がないので．
+        dp[i] = min(dp[i], dp[i-2] + abs(h[i] - h[i-2]))
+
+#4:出力
+print(dp[N-1])
