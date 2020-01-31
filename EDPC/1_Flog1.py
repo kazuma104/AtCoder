@@ -3,7 +3,6 @@ N = int(input())
 h = list(map(int, input().split()))
 inf = float("inf")
 dp = [inf]*(N)
-print(dp)
 
 #2:初期値
 dp[0] = 0
@@ -22,5 +21,4 @@ for i in range(1,N):
 #         dp[i+2] = min(dp[i+2], dp[i] + abs(h[i] - h[i+2]))
 
 #4:出力
-print(dp)
 print(dp[N-1])
