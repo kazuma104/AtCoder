@@ -1,5 +1,4 @@
 # AtCoder
-
 [AtCoder](https://atcoder.jp/home)（アットコーダー）とは、「**競技プログラミング**」と呼ばれるコンピュータプログラムのコンテストを行うサービス、および高橋直大が代表を務めるその運営会社を指す。[by.wiki](https://ja.wikipedia.org/wiki/AtCoder)
 
 ## AtCoder Beginner Contest (ABC)
