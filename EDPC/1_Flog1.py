@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-#1初期化
-N = int(input())
-h = list(map(int, input().split()))
-dp = [[float("inf")]*(N+1)]
-
-#2初期条件
-dp[0] = 0
-
-print(*dp, sep="\n") #dp部確認用
-
-#3ループ
-for i in range(N):
-    max()
-=======
 #1:初期化
 N = int(input())
 h = list(map(int, input().split()))
@@ -37,4 +22,3 @@ for i in range(1,N):
 
 #4:出力
 print(dp[N-1])
->>>>>>> 736528d5d2ff74ec47ac0d6ea762cf6492d5025e
