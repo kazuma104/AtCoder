@@ -55,5 +55,7 @@ for i in range(2 ** n):
 git checkout -b【ブランチ名】
 ```
 
-VSCode内でmarkdownのプレビューを見る．  
-[Ctrl]+[K]+[V]
+###書く予定
+https://www.kumilog.net/entry/python-speed-comp
+https://juppy.hatenablog.com/entry/2019/06/14/Python_競技プログラミング高速化tips_%28PythonでAtcoderをやる際に個
+pypyについて
