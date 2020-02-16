@@ -7,7 +7,13 @@
 自分はここのC~Dあたりが難しいので頑張ってもっと解けるようにする．  
 **Rated対象:～1999**
 * [ABC147](https://atcoder.jp/contests/abc147)
-* [ABC148](https://atcoder.jp/contests/abc148)
+[ABC148](https://atcoder.jp/contests/abc148)
+[ABC149](https://atcoder.jp/contests/abc149)
+[ABC150](https://atcoder.jp/contests/abc150)
+[ABC151](https://atcoder.jp/contests/abc151)
+[ABC152](https://atcoder.jp/contests/abc152)
+[ABC153](https://atcoder.jp/contests/abc153)
+[ABC154](https://atcoder.jp/contests/abc154)
 * [三井住友信託銀行プログラミングコンテスト2019](https://atcoder.jp/contests/sumitrust2019)
 
 ## AtCoder Regular Contest (ARC)
