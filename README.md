@@ -53,11 +53,15 @@ vscodeでmarkdown形式を見る方法
 
 ### Pythonを使用するにあたって
 Pythonでは実行速度がアルゴリズム的に良くても計算時間外になることがある．  
-その場合はPypyを使用してみるか，以下のサイトのような高速かを図ってみると良い．  
+その場合はPypyを使用してみるか，以下のサイトのような高速化を図ってみると良い．  
 * https://www.kumilog.net/entry/python-speed-comp  
 * https://juppy.hatenablog.com/entry/2019/06/14/Python_競技プログラミング高速化tips_%28PythonでAtcoderをやる際に個  
 
-また，見やすくするために以下のサイトを参考にしてtemplate.pyを作製した．  
-（なぜかmain関数により実行速度が速くなる．）  
+また，見やすくするために以下のサイトを参考にしてtemplate.pyを作製した．   
 https://gammasoft.jp/python/python-script-pattern/  
 
+#### 時間があれば見る
+https://qiita.com/Kentaro_okumura/items/5b95b767a2e691cd5482
+https://qiita.com/drken/items/ecd1a472d3a0e7db8dce
+https://qiita.com/y-tsutsu/items/aa7e8e809d6ac167d6a1
+https://qiita.com/chun1182/items/ddf2b6cba932b2bb0d4e
