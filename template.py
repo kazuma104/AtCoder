@@ -12,11 +12,12 @@
 （https://juppy.hatenablog.com/entry/2019/06/14/Python_競技プログラミング高速化tips_%28PythonでAtcoderをやる際に個）
     ・appendで使うどっとを消すと速いと書いているが遅くなった
 """
+
 import sys
 input == sys.stdin.readline
 
 def main():
-    print()
+    """ここにコードを書く"""
 
 if __name__ == '__main__':
     main()
