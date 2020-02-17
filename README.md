@@ -56,7 +56,8 @@ Pythonでは実行速度がアルゴリズム的に良くても計算時間外�
 その場合はPypyを使用してみるか，以下のサイトのような高速かを図ってみると良い．  
 * https://www.kumilog.net/entry/python-speed-comp  
 * https://juppy.hatenablog.com/entry/2019/06/14/Python_競技プログラミング高速化tips_%28PythonでAtcoderをやる際に個  
-また，見やすくするために以下のサイトを参考にしてtemplate.pyを作製した．
+
+また，見やすくするために以下のサイトを参考にしてtemplate.pyを作製した．  
 （なぜかmain関数により実行速度が速くなる．）  
 https://gammasoft.jp/python/python-script-pattern/  
 
