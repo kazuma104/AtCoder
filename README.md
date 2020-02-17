@@ -4,7 +4,7 @@
 ## AtCoder Beginner Contest (ABC)  
 競技プログラミング初心者/初級者向けのコンテスト．  
 必ずしもABCと書かれているものだけが，Beginnerではない．  
-自分はここのC~Dあたりが難しいので頑張ってもっと解けるようにする．  
+自分はここのD~Fあたりが難しいので頑張ってもっと解けるようにする．  
 **Rated対象:～1999**
 * [ABC147](https://atcoder.jp/contests/abc147)
 [ABC148](https://atcoder.jp/contests/abc148)
@@ -29,7 +29,7 @@
 
 ## DP(動的計画法)
 DP問題はAtCoderの問題から選んでいないものがあるが一応載せておく．  
-下のDP(動的計画法)はとてもためになる（やばい）．その派生サイトも  
+下のDP(動的計画法)はとてもためになる．その派生サイトも  
 * [DP(動的計画法)](https://qiita.com/drken/items/a5e6fe22863b7992efdb)  
 * [EDPC](https://atcoder.jp/contests/dp)
 
@@ -51,7 +51,12 @@ git checkout -b【ブランチ名】
 vscodeでmarkdown形式を見る方法  
 [ctrl]+[k]→[v]  
 
-### 書く予定(処理速度高速化)  
-https://www.kumilog.net/entry/python-speed-comp  
-https://juppy.hatenablog.com/entry/2019/06/14/Python_競技プログラミング高速化tips_%28PythonでAtcoderをやる際に個  
+### Pythonを使用するにあたって
+Pythonでは実行速度がアルゴリズム的に良くても計算時間外になることがある．  
+その場合はPypyを使用してみるか，以下のサイトのような高速かを図ってみると良い．  
+* https://www.kumilog.net/entry/python-speed-comp  
+* https://juppy.hatenablog.com/entry/2019/06/14/Python_競技プログラミング高速化tips_%28PythonでAtcoderをやる際に個  
+また，見やすくするために以下のサイトを参考にしてtemplate.pyを作製した．
+（なぜかmain関数により実行速度が速くなる．）  
+https://gammasoft.jp/python/python-script-pattern/  
 
