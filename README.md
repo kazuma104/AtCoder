@@ -28,8 +28,8 @@
 **Rated対象:ALL**
 
 ## DP(動的計画法)
-DP問題はAtCoderの問題から選んでいないものがあるが一応載せておく．  
-下のDP(動的計画法)はとてもためになる．その派生サイトも  
+下のDP(動的計画法)はAtCoderではないが，とてもためになるので載せておく． 
+EDPCの問題はpythonは遅いので推奨されていないが，知ったこっちゃない！ 
 * [DP(動的計画法)](https://qiita.com/drken/items/a5e6fe22863b7992efdb)  
 * [EDPC](https://atcoder.jp/contests/dp)
 
