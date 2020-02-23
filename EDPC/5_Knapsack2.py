@@ -2,6 +2,8 @@
     4とは制約が変わっている．
     この問題も二次元配列ではきつい．勿論numpyは使わない
 """
+import sys
+input = sys.stdin.readline
 
 #これがACになる．
 def main():

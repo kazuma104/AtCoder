@@ -4,6 +4,8 @@
     (参考#9889377)
     サイトは「tsutaj.hatenablog.com/entry/2017/12/09/000000」を見ると分かりやすい
 """
+import sys
+input = sys.stdin.readline
 
 #これがACになる．
 def main():
