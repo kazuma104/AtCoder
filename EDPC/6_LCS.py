@@ -2,9 +2,11 @@
     いつものように，numpyを使いたくなかったので他人のコードを参考にした．
     enumerateは「https://note.nkmk.me/python-enumerate-start/」を参考．
     ll,ul,uuが何をしているか．
+    (参考#8263807)
+    文字列を見るのでimport sysはない．
 """
 
-def main2():
+def main():
     #1:初期化
     s = input()
     t = input()
@@ -21,14 +23,26 @@ def main2():
         dp.append(v)
         #print("in",*dp,sep="\n")
         ll, ul = 0, 0
+        #ll=文字列tのj文字目にsと被ることのできる最大文字数
+        #ul=文字列tのj文字目を見たときに作れる最大部分列の文字数
+        #文字列tに
+        """
+            abracadabraとavadakedavraのとき
+            文字列sの二個目のaに注目してみると，
+            文字列tの二個目のaでllが2になる．(ul==uu==1)
+            文字列tのrを見るとき，まずuuが2になる．
+            if文はスキップされulも2になる．
+        """
         for j, str2 in enumerate(t, 1):
-            uu = v[j]
+            uu = v[j] #uu=更新前の文字列tのj文字目までの最大部分列の文字数
+            #print(ll,ul,uu,"--> ",end="")
             if str1 == str2:
                 v[j] = ll = ul + 1
             elif ll > uu:
                 v[j] = ll
             ul = uu
-        print(ll,ul,uu,"out",*dp,sep="\n")
+            #print(ll,ul,uu)
+        print(*dp,sep="\n")
             
     # #4:出力
     #print(*dp,sep="\n")
@@ -46,7 +60,7 @@ def main2():
             t_len -= 1
     print(res)
 
-def main():
+def main2():
     #1:初期化
     s = input()
     t = input()
@@ -79,4 +93,4 @@ def main():
     print(res)
         
 if __name__ == '__main__':
-    main2()
+    main()
