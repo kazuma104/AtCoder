@@ -17,14 +17,14 @@
 import sys
 input == sys.stdin.readline
 
-def maindp():
+def main():
     """dpをするときのてんぷれコ―ド"""
     #1:初期化
     #2:初期値
     #3:dp実行部(貰うDP)or(配るDP)
     #4:出力
 
-def main():
+def main2():
     """ここにコードを書く"""
 
 if __name__ == '__main__':
