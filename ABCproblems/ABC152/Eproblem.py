@@ -18,7 +18,21 @@ def prime_factorize(n):
 
 N = int(input())
 A = list(map(int, input().split()))
+z = collections.Counter()
+y = []
 
 for i in A:
     c = collections.Counter(prime_factorize(i))
-    print(c)
+    for j in c.keys():
+        if j in z:
+            #print(c[j], z[j])
+            z += collections.Counter({j: max(0, c[j]-z[j])})
+        else:
+            z += c
+
+print(z)
+for i in A:
+    c = collections.Counter(prime_factorize(i))
+    z += c
+    y += c.items()
+    print(c, c.items())
