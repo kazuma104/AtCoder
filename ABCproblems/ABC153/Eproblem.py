@@ -1,17 +1,17 @@
 H, N = map(int, input().split())
 
-AB = []
-ABdiv = []
+#dp[i][j] iのダメージを与えるために必要な最低魔力
+dp = [[float("inf")]*(H+1) for _ in range(N+1)]
 
-for i in range(N):
+for i in range(1,N+1):
     A, B = map(int, input().split())
-    AB.append([A,B])
-    ABdiv.append(A/B)
-
-print(ABdiv[0], ABdiv[1], ABdiv[2])
-sortAB = [sorted(ABdiv).index(s) for s in ABdiv]
-print(sortAB)
-print(max(zip(sortAB, range(len(sortAB)))))
-#for _ in range(10000000):
+    for j in range(1,H+1):
+        hoji = j//A + 1 #脳筋法「例1で，jが8のときは魔力が3で，jが9になると魔力が9になるように」
+        if j%A == 0:
+            hoji -= 1
+        hoji = hoji*B
+        dp[i][j] = min(dp[i-1][j], hoji)
+    print(*dp,sep="\n")
+        
 
 
