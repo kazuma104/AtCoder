@@ -2,7 +2,7 @@ N = int(input())
 S = input()
 
 count = 0
-for i in range(N-3):
+for i in range(N-2):
     if(S[i:(i+3)] == "ABC"):
         count += 1
 
