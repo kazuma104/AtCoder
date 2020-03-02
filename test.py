@@ -1,53 +1,33 @@
-from collections import deque
+import time
 
-h,w = map(int, input().split())
-l = [list(input()) for _ in range(h)]
+def hairetu():
+    s1 = [2, 3]*5
+    s2 = [[2, 3] for _ in range(5)]
+    s3 = [[2, 3]*5]
 
-# 最大値の格納する
-ans = 0
+    print(s1,s2,s3)
 
-def bfs(y,x,m):#未実装
-    #表の初期化
-    graph = [[None] * w for i in range(h)]
-    #最初の地点のコストは0
-    graph[y][x] = 0
+def time_module():
+    t1 = time.time()
 
-    q = deque()
-    q.append((y,x))
+    for _ in range(1):
+        s1 = [input() for _ in range(3)]
 
-    for i in range(h):
-        for j in range(w):
-            if l[i][j] == '#':
-                graph[i][j] = -1
+    t2 = time.time()
 
-    #ノードの移動方向 左が縦軸, 右が横軸
-    move = ((0, 1), (0, -1), (1, 0), (-1, 0))
+    for _ in range(10):
+        s2 = [[i for i in [2, 3]] for _ in range(10)]
 
-    while q: #wがからになるまで続ける while len(q):でもOK
-        #que左端から取り出す
-        i, j = q.popleft()
+    print(s1,s2)
+    t3 = time.time()
 
-        for di, dj in move:
-            #ni, nj 遷移先の座標
-            ni , nj = i + di, j + dj
-            #遷移先がフィールド内であるか、Noneかどうかをチェックする
-            if 0 <= ni < h and 0 <= nj < w and graph[ni][nj] is None:
-                #遷移可能であれば現在のコストに1足して渡す
-                #print(type(graph[i][j]))
-                graph[ni][nj] = graph[i][j] + 1
-                #queに格納する
-                q.append((ni, nj))
+    print(f"処理1:{t2-t1}")
+    print(f"処理2:{t3-t2}")
 
-    #queが空になると移動コストtableが完成
-    #表中の最大値返す
-    return max(max(r) for r in graph)
+def main():
+    #time_module()
+    hairetu()
 
-for i in range(h):
-    for j in range(w):
-        #'.'であればスタート地点になり得るので、それをbfsにかける
-        if l[i][j] == '.':
-            d = bfs(i,j,l) # (x, y) = (j, i), lは入力の表の情報
-            #返り値が現在の最大値より大きければ値を更新する
-            if ans < d:
-                ans = d
-print(ans)
+
+if __name__ == "__main__":
+    main()
