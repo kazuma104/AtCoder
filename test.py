@@ -2,10 +2,14 @@ import time
 
 def hairetu():
     s1 = [2, 3]*5
-    s2 = [[2, 3] for _ in range(5)]
-    s3 = [[2, 3]*5]
-
-    print(s1,s2,s3)
+    s2 = [input().split() for _ in range(5)]
+    s3 = []
+    s4 = []
+    for _ in range(5):
+        s3.append([2, 3])
+        s4.extend([2, 3])
+    s5 = [i for i in input().split()]
+    print(s1,s2,s3,s4,s5,sep="\n")
 
 def time_module():
     t1 = time.time()
