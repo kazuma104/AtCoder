@@ -3,6 +3,8 @@ import collections
 N = int(input())
 A = list(map(int, input().split()))
 
+#ren = [0]*(10**9+2*(10**5))
+
 L = [0]*N
 R = [0]*N
 
