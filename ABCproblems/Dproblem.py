@@ -1,36 +1,33 @@
-# import heapq
-# import sys
+from collections import deque, defaultdict
 
-# input = sys.stdin.readline
+N, M = map(int, input().split())
+outs = defaultdict(list)
 
-# def dijkstra_heap(s,edge):
-#     #始点sから各頂点への最短距離
-#     d = [10**20] * n
-#     used = [True] * n #True:未確定
-#     d[s] = 0
-#     used[s] = False
-#     edgelist = []
-#     for a,b in edge[s]:
-#         heapq.heappush(edgelist,a*(10**6)+b)
-#     while len(edgelist):
-#         minedge = heapq.heappop(edgelist)
-#         #まだ使われてない頂点の中から最小の距離のものを探す
-#         if not used[minedge%(10**6)]:
-#             continue
-#         v = minedge%(10**6)
-#         d[v] = minedge//(10**6)
-#         used[v] = False
-#         for e in edge[v]:
-#             if used[e[1]]:
-#                 heapq.heappush(edgelist,(e[0]+d[v])*(10**6)+e[1])
-#     return d
-# #########################
-# n,w = map(int,input().split())
+for _ in range(M):
+    v1, v2 = map(int, input().split())
+    outs[v1].append(v2)
+    outs[v2].append(v1)
 
-# edge = [[] for i in range(n)]
-# #隣接リスト edge[i]:[コスト,行先]
-# for i in range(w):
-#     x,y,z = map(int,input().split())
-#     edge[x].append([z,y])
-#     edge[y].append([z,x])
-# print(prim_heap())
+# print(outs)
+q = deque([1])
+depth = defaultdict(int)
+depth[1] = 0
+visit = [False]*N #配列なので0オリジン
+visit[0] = True
+# print(visit)
+while q:
+    v1 = q.popleft()
+    # print("a",v1)
+    for v2 in outs[v1]: #v1のノードから出ている矢印をみる．
+        # print("b",v2)
+        if visit[v2-1]==False:
+            visit[v2-1] = True
+            depth[v2] = v1
+            q.append(v2)
+            # print(v2,q,depth)
+
+b = sorted(depth.items())
+# print(b)
+print("Yes")
+for i in range(1,N):
+    print(b[i][1])
