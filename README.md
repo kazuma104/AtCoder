@@ -68,5 +68,3 @@ https://qiita.com/drken/items/ecd1a472d3a0e7db8dce
 https://qiita.com/y-tsutsu/items/aa7e8e809d6ac167d6a1
 https://qiita.com/chun1182/items/ddf2b6cba932b2bb0d4e
 
-#### 秘密
-codeforces，AOJ 
